@@ -1,4 +1,6 @@
-package org.example.design_patterns.creational.factory_method;
+package org.example.design_patterns.creational.factory_method.dialogs;
+
+import org.example.design_patterns.creational.factory_method.buttons.IButton;
 
 /**
  * @author juandiegoespinosasantos@gmail.com
