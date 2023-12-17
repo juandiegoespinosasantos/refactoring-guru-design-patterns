@@ -1,18 +1,22 @@
 package org.example.design_patterns.creational.prototype.shapes;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 /**
  * @author juandiegoespinosasantos@gmail.com
  * @version Dec 16, 2023
- * @since 17
  * @see <a href="https://refactoring.guru/design-patterns/prototype">https://refactoring.guru/design-patterns/prototype</a>
+ * @since 17
  */
+@NoArgsConstructor
+@Getter
+@Setter
 public class Rectangle extends Shape {
 
     private int width;
     private int height;
-
-    public Rectangle() {
-    }
 
     public Rectangle(Rectangle source) {
         super(source);
@@ -35,21 +39,5 @@ public class Rectangle extends Shape {
         Rectangle otherRectangle = (Rectangle) other;
 
         return (otherRectangle.getWidth() == width) && (otherRectangle.getHeight() == height);
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
     }
 }

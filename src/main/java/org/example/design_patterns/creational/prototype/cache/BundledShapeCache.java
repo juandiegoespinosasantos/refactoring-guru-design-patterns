@@ -9,8 +9,8 @@ import org.example.design_patterns.creational.prototype.shapes.Shape;
 /**
  * @author juandiegoespinosasantos@gmail.com
  * @version Dec 16, 2023
- * @since 17
  * @see <a href="https://refactoring.guru/design-patterns/prototype">https://refactoring.guru/design-patterns/prototype</a>
+ * @since 17
  */
 public class BundledShapeCache {
 
